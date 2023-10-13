@@ -11,15 +11,17 @@ This script uses ACME to automatically apply for certificates, so please make su
 lsof -i :80
 ```
 
-### 3. Execute installation command.
+### 3. Execute installation command
 ```bash
 bash <(curl -Ls https://qwq.mx/hy2)
+```
+
+```bash
 # or
 bash <(curl -Ls https://github.com/missuo/Hysteria2/raw/main/hy2.sh)
 ```
 
-
-### 4. Enter the configuration information according to the prompts.
+### 4. Enter the configuration information according to the prompts
 ```
 Enter the port (default: 8443): 
 Enter the domain: 
