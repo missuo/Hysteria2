@@ -23,6 +23,11 @@ Enter the domain:
 Enter the password (default: Hy2Best2024@):
 ```
 
+### Uninstall
+```bash
+bash <(curl -fsSL https://get.hy2.sh/) --remove
+```
+
 ## Client
 ### Surge
 ```
