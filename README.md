@@ -2,21 +2,21 @@
 Hysteria 2 One-Click Installation Script
 
 ## User Manual
-### Resolve the domain name to your VPS IP
+### 1. Resolve the domain name to your VPS IP
 **If you are using Cloudflare, do not turn on the CDN service.**
 
-### Ensure that port 80 of the VPS is not occupied
+### 2. Ensure that port 80 of the VPS is not occupied
 This script uses ACME to automatically apply for certificates, so please make sure that port 80 is available. You can use the following command to determine: 
 ```bash
 lsof -i :80
 ```
 
-### Execute installation command.
+### 3. Execute installation command.
 ```bash
 bash <(curl -Ls https://qwq.mx/hy2)
 ```
 
-### Enter the configuration information according to the prompts.
+### 4. Enter the configuration information according to the prompts.
 ```
 Enter the port (default: 8443): 
 Enter the domain: 
