@@ -3,12 +3,19 @@
  # @Author: Vincent Young
  # @Date: 2023-10-12 23:21:35
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-10-12 23:25:33
+ # @LastEditTime: 2023-10-12 23:32:07
  # @FilePath: /Hysteria2/hy2.sh
  # @Telegram: https://t.me/missuo
  # 
  # Copyright © 2023 by Vincent, All Rights Reserved. 
 ### 
+#!/bin/bash
+
+# Check if port 80 is in use
+if netstat -tuln | grep -q ":80 "; then
+    echo "Port 80 is already in use. Exiting..."
+    exit 1
+fi
 
 ## Install Hysteria 2
 bash <(curl -fsSL https://get.hy2.sh/)
@@ -46,4 +53,4 @@ echo "Config file created!"
 
 ## Start Hysteria 2
 systemctl start hysteria-server.service
-systemctl enable Hysteria-server.service
+systemctl enable hysteria-server.service
