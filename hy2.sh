@@ -3,7 +3,7 @@
  # @Author: Vincent Young
  # @Date: 2023-10-12 23:21:35
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-10-13 21:06:15
+ # @LastEditTime: 2023-10-14 00:00:17
  # @FilePath: /Hysteria2/hy2.sh
  # @Telegram: https://t.me/missuo
  # 
@@ -12,6 +12,9 @@
 #!/bin/bash
 
 show_menu() {
+    echo "Hysteria 2 Installation by Vincent."
+    echo "https://github.com/missuo/Hysteria2"
+    echo "-----------------------------------"
     echo "Choose an option:"
     echo "1. Install Hysteria 2"
     echo "2. Uninstall Hysteria 2"
@@ -68,8 +71,8 @@ EOF
     systemctl start hysteria-server.service
     systemctl enable hysteria-server.service
     
-    # Wait for 20 seconds
-    sleep 20
+    # Wait for 10 seconds
+    sleep 10
 
     # Check service status
     STATUS=$(systemctl is-active hysteria-server.service)
@@ -83,6 +86,7 @@ EOF
     else
         echo "Failed to start Hysteria 2. Please check service status manually."
     fi
+    echo ""
 }
 
 uninstall_hysteria() {
@@ -93,6 +97,7 @@ uninstall_hysteria() {
     rm -f /etc/systemd/system/multi-user.target.wants/hysteria-server@*.service
     systemctl daemon-reload
     echo "Hysteria 2 uninstalled!"
+    echo ""
 }
 
 while true; do
