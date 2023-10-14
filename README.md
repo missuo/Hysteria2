@@ -28,16 +28,6 @@ Enter the domain:
 Enter the password (default: Hy2Best2024@):
 ```
 
-### Uninstall
-```bash
-bash <(curl -fsSL https://get.hy2.sh/) --remove
-rm -rf /etc/hysteria
-userdel -r hysteria
-rm -f /etc/systemd/system/multi-user.target.wants/hysteria-server.service
-rm -f /etc/systemd/system/multi-user.target.wants/hysteria-server@*.service
-systemctl daemon-reload
-```
-
 ## Client
 ### Surge
 ```
