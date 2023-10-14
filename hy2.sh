@@ -11,8 +11,6 @@
 ### 
 #!/bin/bash
 
-#!/bin/bash
-
 show_menu() {
     echo "Choose an option:"
     echo "1. Install Hysteria 2"
