@@ -13,7 +13,7 @@ lsof -i :80
 
 ### 3. Execute installation command
 ```bash
-bash <(curl -Ls https://owo.nz/hy2)
+bash <(curl -Ls https://ssa.sx/hy2)
 ```
 
 ```bash
